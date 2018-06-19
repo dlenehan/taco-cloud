@@ -83,8 +83,8 @@ public class DesignTacoController {
       return "design";
     }
     log.info("This is the design: " + design);
-    design.setCreatedAt(new Date());
-    log.info("This is the date: " + design.getCreatedAt());
+    //design.setCreatedAt(new Date());
+   // log.info("This is the date: " + design.getCreatedAt());
     Taco saved = designRepo.save(design);
     order.addDesign(saved);
     log.info("Processing design: " + design);
